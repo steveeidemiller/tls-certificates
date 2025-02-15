@@ -1,0 +1,15 @@
+# Ignore certificate files
+*.crt
+*.pem
+*.cer
+
+# Ignore private key files
+*.key
+*.pfx
+*.p12
+
+# Ignore serial files
+*.srl
+
+# Ignore certificate requests
+*.csr

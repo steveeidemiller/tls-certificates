@@ -1,0 +1,38 @@
+#Reference: https://devopscube.com/create-self-signed-certificates-openssl/
+
+[ req ]
+
+distinguished_name     = req_distinguished_name
+
+# Stop confirmation prompts. All information is contained below.
+prompt                 = no
+
+# The extensions to add to a certificate request - see [ v3_req ]
+req_extensions		   = v3_req
+
+[ req_distinguished_name ]
+
+# C=countryName, ST=stateOrProvinceName, L=localityName, O=organizationName, OU=organizationUnitName, CN=commonName
+C                      = US
+ST                     = Alabama
+L                      = Orange Beach
+O                      = Eidemiller Industries
+OU                     = Sapphire IOT
+CN                     = iot.eidemiller.net
+emailAddress           = steve.eidemiller@gmail.com
+
+[ v3_req ]
+
+# What the key can/cannot be used for:
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment, dataEncipherment
+extendedKeyUsage = clientAuth, serverAuth
+
+# The CN field has been deprecated for name validation, so the SAN field is now required and must contain all CN's
+subjectAltName = @alt_names
+
+[ alt_names ]
+
+# List of all the DNS names that the certificate should work for
+# To specify multiple values append a numeric identifier, as shown
+DNS.1 = iot.eidemiller.net
