@@ -14,7 +14,7 @@ countryName            = US
 stateOrProvinceName    = Alabama
 localityName           = Orange Beach
 organizationName       = Eidemiller Industries
-organizationUnitName   = Sapphire IOT
+organizationalUnitName = Sapphire IOT
 commonName             = www.eidemiller.net
 emailAddress           = steve.eidemiller@gmail.com
 

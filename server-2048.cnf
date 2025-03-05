@@ -33,3 +33,5 @@ subjectAltName = @alt_names
 # List of all the DNS names that the certificate should work for
 # To specify multiple values append a numeric identifier, as shown
 DNS.1 = iot.eidemiller.net
+DNS.2 = mqtt.eidemiller.net
+DNS.3 = 192.168.1.60
