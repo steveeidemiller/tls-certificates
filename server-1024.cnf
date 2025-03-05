@@ -1,5 +1,3 @@
-#Reference: https://devopscube.com/create-self-signed-certificates-openssl/
-
 [ req ]
 
 distinguished_name     = req_distinguished_name
@@ -12,13 +10,12 @@ req_extensions		   = v3_req
 
 [ req_distinguished_name ]
 
-# C=countryName, ST=stateOrProvinceName, L=localityName, O=organizationName, OU=organizationUnitName, CN=commonName
-C                      = US
-ST                     = Alabama
-L                      = Orange Beach
-O                      = Eidemiller Industries
-OU                     = Sapphire IOT
-CN                     = iot.eidemiller.net
+countryName            = US
+stateOrProvinceName    = Alabama
+localityName           = Orange Beach
+organizationName       = Eidemiller Industries
+organizationUnitName   = Sapphire IOT
+commonName             = iot.eidemiller.net
 emailAddress           = steve.eidemiller@gmail.com
 
 [ v3_req ]
