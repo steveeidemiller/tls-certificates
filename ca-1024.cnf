@@ -6,7 +6,7 @@ distinguished_name     = req_distinguished_name
 prompt                 = no
 
 # The extensions to add to a certificate request - see [ v3_req ]
-req_extensions		   = v3_req
+req_extensions	       = v3_req
 
 [ req_distinguished_name ]
 
